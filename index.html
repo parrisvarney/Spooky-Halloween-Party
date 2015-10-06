@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="SpookyApp">
+<head>
+    <meta charset="UTF-8">
+    <title>Spooky Halloween Party?</title>
+    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.4.5/angular.min.js"></script>
+    <script src="spooky.js"></script>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <link rel="stylesheet" type="text/css" href="https://cdnjs.cloudflare.com/ajax/libs/animate.css/3.4.0/animate.css">
+</head>
+<body ng-controller="SpookyController" ng-mouseup="stopMoving()">
+<div class="page" id="mario-overworld-div">
+    <h1>RSVP THE SPOOKY HALLOWEEN PARTY?</h1>
+    <div id="mario" ng-style="marioStyle"></div>
+    <div id="yes-block" ng-style="yesBlockStyle"></div>
+    <div id="yes-check"></div>
+    <div id="no-block" ng-style="noBlockStyle"></div>
+    <div id="no-x" ng-style="noBlockCheckStyle"></div>
+    <div id="mario-controls">
+        <button type="button" ng-mousedown="moveLeft()">&#8592;</button>
+        <button type="button" ng-click="jump()">&#8593;</button>
+        <button type="button" ng-mousedown="moveRight()">&#8594;</button>
+    </div>
+</div>
+<div class="page" id="yes-div">
+    <h2>Good call</h2>
+    <div id="what-to-expect">
+        <h3>What to expect</h3>
+        <ul>
+            <li>Costumes</li>
+            <li>Food</li>
+            <li>Good Beer</li>
+            <li>Piss Beer</li>
+            <li>Fire Pit</li>
+            <li>Apple Related Activities</li>
+            <li>Strangers</li>
+            <li class="canceled">Bouncy Castle</li>
+            <li>Petting Zoo</li>
+        </ul>
+    </div>
+    <div id="map-div">
+        <h3>The location</h3>
+        <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d2951.8208703434752!2d-71.02171899999999!3d42.282347!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x89e37b43a2ff0f99%3A0x5abe51e7f666db31!2s54+Appleton+St%2C+Quincy%2C+MA+02171!5e0!3m2!1sen!2sus!4v1444143072216" width="600" height="450" frameborder="0" style="border:0" allowfullscreen></iframe>
+    </div>
+    <div id="info-div">
+        <marquee>&lt;marquee> Saturday, October 31st, 6pm - midnight. &lt;/marqueeeeeeee></marquee>
+    </div>
+</div>
+<div class="page" id="no-div">
+    <h1 class="animated" ng-class="{hinge: !viewerIsStillYourFriend}">Wow, and we considered you a friend</h1>
+</div>
+</body>
+</html>

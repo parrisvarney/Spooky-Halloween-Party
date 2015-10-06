@@ -1,0 +1,136 @@
+html {
+    min-height: 100%;
+    position: relative;
+}
+
+body {
+    position: absolute;
+    height:   100%;
+    width:    100%;
+    margin:   0;
+}
+
+.page {
+    position: relative;
+    height: 100%;
+    width:  100%;
+}
+
+#mario-overworld-div {
+    background:      #ffffff url("mario-overworld.jpg") repeat-x right top;
+    background-size: auto 100%;
+}
+
+#no-div {
+    background:      #ffffff url("sorry.jpeg") no-repeat right top;
+    background-size: auto 100%;
+}
+
+h1 {
+    padding: 10px;
+    font-size: 800%;
+    text-align:  center;
+    text-shadow: 3px 3px 0 rgba(150, 150, 67, 0.7);
+}
+
+h2 {
+    padding:     20px 0 0 10px;
+    font-size:   400%;
+    text-shadow: 3px 3px 0 rgba(150, 150, 67, 0.7);
+}
+
+h3 {
+    color: red;
+    font-size: 200%;
+}
+
+#what-to-expect {
+    padding: 0 30px;
+}
+
+ul > li {
+    font-size: 20px;
+}
+
+.canceled {
+    text-decoration: line-through;
+}
+#mario-controls {
+    position: absolute;
+    bottom:   50px;
+    right:    50px;
+}
+
+button {
+    border:           3px solid black;
+    border-radius:    5px;
+    background-color: white;
+    height:           50px;
+    width:            50px;
+    font-size:        30px;
+}
+
+#mario {
+    background:      transparent url('mario-standing.png') no-repeat left top;
+    background-size: 100% 100%;
+    position:        absolute;
+    height:          10%;
+}
+
+#yes-block {
+    background:      transparent url('question-block.png') no-repeat left top;
+    background-size: 100% 100%;
+    position:        absolute;
+    height:          13%;
+    width:           12%;
+    top:             50%;
+    left:            30%
+}
+
+#no-block {
+    background:      transparent url('question-block.png') no-repeat left top;
+    background-size: 100% 100%;
+    position:        absolute;
+    height:          14%;
+    width:           12%;
+    top:             50%;
+    left:            70%
+}
+
+#yes-check {
+    background:      transparent url('yes-y.png') no-repeat left top;
+    background-size: 100% 100%;
+    position:        absolute;
+    height:          13%;
+    width:           12%;
+    top:             30%;
+    left:            30%
+}
+
+#no-x {
+    background:      transparent url('no-x.jpg') no-repeat left top;
+    background-size: 100% 100%;
+    position:        absolute;
+    height:          10%;
+    width:           8%;
+    top:             32%;
+    left:            72%
+}
+
+#map-div {
+    position: absolute;
+    top:      20px;
+    right:    20px;
+}
+
+#info-div {
+    position: absolute;
+    bottom:   30px;
+    text-align: center;
+    width: 100%;
+    font-size: 200%;
+}
+
+.hinge {
+    -webkit-animation-delay: 2s;
+}
