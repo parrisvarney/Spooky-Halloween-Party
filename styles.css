@@ -27,8 +27,9 @@ body {
 }
 
 h1 {
-    padding: 10px;
-    font-size: 800%;
+    margin:      0;
+    padding:     10px;
+    font-size:   800%;
     text-align:  center;
     text-shadow: 3px 3px 0 rgba(150, 150, 67, 0.7);
 }
