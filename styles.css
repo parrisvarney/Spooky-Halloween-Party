@@ -56,9 +56,10 @@ ul > li {
 .canceled {
     text-decoration: line-through;
 }
+
 #mario-controls {
     position: absolute;
-    bottom:   50px;
+    bottom:   90px;
     right:    50px;
 }
 

@@ -24,7 +24,7 @@ angular.module('SpookyApp', []).
         $scope.moveLeft = function() {
             moving = setInterval(function() {
                 $scope.$apply(function() {
-                    $scope.marioStyle.left = parseInt($scope.marioStyle.left) || 5 - 1 + '%';
+                    $scope.marioStyle.left = parseInt($scope.marioStyle.left) - 1 + '%';
                 });
             }, 30);
         };
