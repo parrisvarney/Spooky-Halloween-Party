@@ -99,4 +99,12 @@ angular.module('SpookyApp', []).
             $location.hash(choice+'-div');
             $anchorScroll();
         };
+
+        // I know, I know, this is cheating
+        var rightButton = document.getElementById('right-button');
+        rightButton.addEventListener("touchstart", $scope.moveRight, false);
+        rightButton.addEventListener("touchend", $scope.stopMoving, false);
+        var leftButton = document.getElementById('left-button');
+        leftButton.addEventListener("touchstart", $scope.moveLeft, false);
+        leftButton.addEventListener("touchend", $scope.stopMoving, false);
     });
