@@ -72,6 +72,14 @@ button {
     font-size:        30px;
 }
 
+@media only screen and (max-device-width: 480px) {
+    button {
+        height:           100px;
+        width:            100px;
+        font-size:        40px;
+    }
+}
+
 #mario {
     background:      transparent url('mario-standing.png') no-repeat left top;
     background-size: 100% 100%;
